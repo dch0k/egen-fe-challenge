@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="creditcardcheck">
+
+<head>
+  <meta charset="utf-8" />
+  <title>CC Check</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="cr-cont" ng-controller="CardController as cardVm">
+    <b> * CARD NUMBER</b>
+    <div class="cr-card">
+      <div class="cr-logo">
+        <img ng-src="{{cardVm.cardType == 'masterCard' && 'https://goo.gl/FoUMFB' 
+           || ((cardVm.cardType == 'visa' && 'https://goo.gl/xmJRfH'
+               || (cardVm.cardType == 'discover' && 'https://goo.gl/f1TNJL' 
+                  || (cardVm.cardType == 'amex' && 'https://goo.gl/IkVeKH'
+                    || 'https://goo.gl/KgUX1M'))))}}">
+      </div>
+      <div class="cr-num">
+        <input id="num" type="text" placeholder="3453123499861235" maxlength="16" ng-model="cardVm.ccnumber" ng-change="cardVm.checkNum(cardVm.ccnumber)" autofocus>
+      </div>
+    </div>
+  </div>
+  <p>-by
+    <br>Chakravarty D.</p>
+  <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.9/angular.js" data-semver="1.4.9"></script>
+  <script src="app.js"></script>
+  <script src="card.controller.js"></script>
+</body>
+
+</html>

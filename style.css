@@ -1,0 +1,54 @@
+/* Styles go here */
+
+img {
+  width: 80px;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.cr-cont {
+  background: #efefef;
+  border-radius: 5px;
+  padding: 2px;
+  width: 320px;
+  height: 85px;
+  font-size: 13px;
+}
+
+.cr-card {
+  border: 1px solid #66bef9;
+  border-radius: 3px;
+  background: #fff;
+  margin: 5px;
+  width: 308px;
+  height: 55px;
+  text-align: center;
+  float: right;
+  display: flex;
+}
+
+.cr-logo {
+  width: 80px;
+  height: 45px;
+  margin: 4px;
+}
+
+.cr-num {
+  width: 200px;
+  height: 45px;
+  margin: 4px;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+input {
+  border: 0;
+  padding: 8px;
+  font-size: 20px;
+  width: 180px;
+  height: 30px;
+  float: left;
+}
